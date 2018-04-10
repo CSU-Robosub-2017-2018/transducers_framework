@@ -3,4 +3,6 @@ import os
 import sys
 sys.path.insert(0, os.path.abspath('..'))
 
-from transducers_framework.transducers_framework.transducers.pressure_model_86 import pressure_model_86
+from transducers_framwork.pressure_tools import transducer_tools
+
+from transducers_framwork.transducers.pressure_base import pressure_base

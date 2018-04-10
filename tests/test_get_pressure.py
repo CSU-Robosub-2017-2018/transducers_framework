@@ -1,6 +1,5 @@
 from context import pressure_base
 from context import transducer_tools
-import numpy as np
 
 pressTools = transducer_tools()
 pressureCSV = pressure_base(0.042389869, -0.124235215, 100)
@@ -12,18 +11,18 @@ pressureCSV = pressure_base(0.042389869, -0.124235215, 100)
 # press86_back.setUpChanel()
 
 pressureCSV.setUpChanel(fileName='pressure_base_data_3.csv')
-endOfFile = pressureCSV.getLenOfFile()-3
-
 
 i = 0
+endOfFile = pressureCSV.getLenOfFile()-3
+# print(endOfFile)
 print('start')
 
 while i<=endOfFile:
 
     pressureCSV.set_data()
-    voltageData = pressureCSV.getAllVoltageData()
+    press1 = pressureCSV.get_pressure()
 
-    print(voltageData)
+    print(press1)
 
     i += 1
 
