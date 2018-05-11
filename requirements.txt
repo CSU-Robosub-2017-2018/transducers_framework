@@ -1,3 +1,20 @@
-This text file will contain all of the requirements for short,
-mid, and long term requirements and goals for the 2017/18 
-RoboSub Sensors Team
+RoboSub Sensors Team 2018
+
+The pressure transducers will be used extensively for this project and 
+should have a lot of focus. They should be used to measure depth as well 
+possibly for dead reckoning. This could be achieved in tandem with hydrophones. 
+The hydrophones will be used to determine X and Y coordinate and pressure 
+transducers for the Z component. This method for dead reckoning will not 
+have drift in the measurements and therefore should have a more accurate 
+map comparatively.
+
+This program is currently designed to be used on a raspberry pi with a 
+Raspberry Pi High-Precision AD/DA Expansion Board. If another computer 
+or connection is wished to be implemented, then all that needs to be 
+changed is the chilled class for the transducer.
+
+Current requirements 
+-	Raspberry pi 
+-	Raspberry Pi High-Precision AD/DA Expansion Board
+-	Numpy
+-	Time

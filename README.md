@@ -1,5 +1,16 @@
-# RoboSub Transducer Tools 2017/18
-Someone needs to fill this out with instructions on how to install dependencies, run this script, add test cases, run test cases, add new components, why this repo matters, etc.  The multicamera_framework REDME.md can be used as a clear reference on how to fill this file out. General HTML codes work for normal things (<B>bold</B>, <I>italic</I>, etc).  Check https://www.stack.nl/~dimitri/doxygen/manual/markdown.html for more style codes and such.
+# RoboSub transducers_framework 2018
+<B>Overview</B>
+This framework connects any transducer (in our case pressure transducer) to a raspberry pi. The program is able to convert the voltage output into pressure using the relationship between voltage and pressure obtained from a calibration curve. The goal of this framework is connect any type of pressure transducer up to three and output pressure from all of them at once. 
+
+<B>Calibration curve</B> 
+The calibration curve for any pressure transducer will need to be calculated before the framework can output pressure. Use the Ideal gas law to calculate the calibration curve. https://en.wikipedia.org/wiki/Ideal_gas_law
+
+<B>Adding new components</B>
+All transducers that have been added thus far extend the global variables and functions from the parent class transducer.py. This style should be implemented into all added transducers.
+
+
+
+
 
 <B>NOTE</B>:  You will need to install the doxygen and graphviz packages in order to run doxygen and generate the outputs.  You can do so with the following command on linux (windows users can blow me):
 
